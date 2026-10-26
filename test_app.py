@@ -5,7 +5,7 @@ def test_home():
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json["message"] == "Hello from our DevOps mini project!"
+    assert response.json["message"] ==  "Incorrect message for testing"
     assert response.json["status"] == "running"
 
 
